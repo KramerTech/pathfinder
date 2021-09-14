@@ -1,0 +1,17 @@
+{
+	"name": "graph-algorithms",
+	"browserslist": [
+		"last 2 Chrome versions"
+	],
+	"scripts": {
+		"start": "concurrently --kill-others \"parcel watch index.html\" \"reload -b -d dist\"",
+		"build": "rm -fr www && mkdir www && parcel build --no-source-maps -d www index.html"
+	},
+	"devDependencies": {
+		"@types/node": "^10.16.1",
+		"concurrently": "^5.1.0",
+		"parcel-bundler": "^1.12.4",
+		"typescript": "^3.8.3"
+	},
+	"dependencies": {}
+}
